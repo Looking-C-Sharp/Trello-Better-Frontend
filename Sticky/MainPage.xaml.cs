@@ -25,6 +25,12 @@ namespace Sticky
         public MainPage()
         {
             this.InitializeComponent();
+            //MyFrame.Navigate(typeof(Signup));
+        }
+
+        private void BtnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

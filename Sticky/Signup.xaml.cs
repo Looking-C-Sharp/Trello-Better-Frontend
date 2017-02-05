@@ -26,5 +26,10 @@ namespace Sticky
         {
             this.InitializeComponent();
         }
+
+        private void BtnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

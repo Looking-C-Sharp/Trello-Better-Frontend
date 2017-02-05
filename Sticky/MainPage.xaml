@@ -8,6 +8,45 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
 
+            <RowDefinition Height="Auto"/>
+
+            <RowDefinition Height="Auto"/>
+
+            <RowDefinition Height="*" />
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+
+
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Signup for Sticky " Grid.ColumnSpan="3" FontSize="40"  Foreground="Black" Margin="0,0,0,20"/>
+
+        <TextBlock Text="UserName :" Grid.Row="1" Foreground="Black"  VerticalAlignment="Center" Margin="0,0,0,20"/>
+
+        <TextBox Name="TxtUserName" BorderBrush="LightGray" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Password" Grid.Row="2"  Foreground="Black" VerticalAlignment="Center" Margin="0,0,0,20"/>
+
+        <PasswordBox Name="TxtPwd" Grid.Row="2" Grid.Column="1" Margin="0,0,0,10" />
+
+        <Button  Grid.Row="4" Grid.Column="1" Background="#FF30DABB" Content="Submit"  Name="BtnSubmit" Click ="BtnSubmit_Click"/>
+
+
+
+
+
+
+        <!--Submit Button-->
+
+      
     </Grid>
 </Page>

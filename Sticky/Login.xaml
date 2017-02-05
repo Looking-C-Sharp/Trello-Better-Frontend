@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="35" Margin="500,320,0,0" VerticalAlignment="Top" Width="285"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Height="35" Margin="500,240,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="285"/>
+        <TextBlock x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="500,200,0,0" TextWrapping="Wrap" Text="Please enter your username:" VerticalAlignment="Top" Width="285"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="35" Margin="500,280,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="285"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Image x:Name="logo" HorizontalAlignment="Left" Height="60" Margin="500,80,0,0" VerticalAlignment="Top" Width="285" AutomationProperties.ItemType="" Source="Assets/stand_in_logo.png"/>
 
     </Grid>
 </Page>

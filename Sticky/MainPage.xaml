@@ -8,43 +8,35 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-
-            <RowDefinition Height="Auto"/>
-
-            <RowDefinition Height="Auto"/>
-
-            <RowDefinition Height="*" />
-
-
-        </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="3*" />
-
-
-        </Grid.ColumnDefinitions>
-        <TextBlock Text="Signup for Sticky " Grid.ColumnSpan="3" FontSize="40"  Foreground="Black" Margin="0,0,0,20"/>
-
-        <TextBlock Text="UserName :" Grid.Row="1" Foreground="Black"  VerticalAlignment="Center" Margin="0,0,0,20"/>
-
-        <TextBox Name="TxtUserName" BorderBrush="LightGray" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10"/>
-
-        <TextBlock Text="Password" Grid.Row="2"  Foreground="Black" VerticalAlignment="Center" Margin="0,0,0,20"/>
-
-        <PasswordBox Name="TxtPwd" Grid.Row="2" Grid.Column="1" Margin="0,0,0,10" />
-
-        <Button  Grid.Row="4" Grid.Column="1" Background="#FF30DABB" Content="Submit"  Name="BtnSubmit" Click ="BtnSubmit_Click"/>
-
-
-
-
-
-
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Signup" FontSize="36" Margin="4" TextAlignment="Center"/>
+            <TextBlock x:Name="ErrorMessage" Text="" FontSize="20" Margin="4" Foreground="Red" TextAlignment="Center"/>
+            <TextBlock Text="Enter your username below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBox x:Name="UsernameTextBox" Margin="4" Width="250"/>
+            <TextBlock Text="Enter your password below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+            TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <PasswordBox x:Name="PasswordTextBox" Margin="4" Width="250"/>
+            <TextBlock Text="Enter your email address below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBox x:Name="EmailTextBox" Margin="4" Width="250"/>
+            
+            <Button x:Name="SignUpButton" Content="Signup" Background="DodgerBlue" Foreground="White"
+        Click="SignUpButton_Click" Width="80" HorizontalAlignment="Center" Margin="0,20"/>
+            <TextBlock Text="Already have an Account?"
+                TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <!-- Ignore Text attribute
+            <TextBlock x:Name="LoginTextBlock" Text="Login now"
+               PointerPressed="RegisterButtonTextBlock_OnPointerPressed"
+               Foreground="DodgerBlue"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+           -->
+            
+           
+        </StackPanel>
         <!--Submit Button-->
 
       

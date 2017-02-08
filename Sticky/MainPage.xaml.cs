@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,14 +25,28 @@ namespace Sticky
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        
+
         public MainPage()
         {
             this.InitializeComponent();
-            //MyFrame.Navigate(typeof(Signup));
+           
         }
 
-        private void BtnSubmit_Click(object sender, RoutedEventArgs e)
+        private async void SignUpButton_Click(object sender, RoutedEventArgs e)
         {
+            if (UsernameTextBox.Text == "")
+            {
+                var dialog = new Windows.UI.Popups.MessageDialog(
+                    "Please enter a username"
+
+                    );
+                await dialog.ShowAsync();
+
+
+            }
+
+
 
         }
     }

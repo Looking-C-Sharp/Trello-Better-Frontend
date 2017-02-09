@@ -21,14 +21,19 @@ namespace Sticky
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class Signup : Page
-
     {
-
         public Signup()
         {
             this.InitializeComponent();
-            
         }
-       
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RegisterButtonTextBlock_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+
         }
     }
+}

@@ -25,16 +25,15 @@ namespace Sticky
         public MainPage()
         {
             this.InitializeComponent();
-            //MyFrame.Navigate(typeof(Signup));
+           
             Loaded += MainPage_Loaded;
         }
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Login));
+            Frame.Navigate(typeof(Signup));
         }
-        private void BtnSubmit_Click(object sender, RoutedEventArgs e)
-        {
+        
 
-        }
+        
     }
 }

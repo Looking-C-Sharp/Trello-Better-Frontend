@@ -7,16 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Right" Width="360" Height="640" VerticalAlignment="Bottom">
-        
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical" Margin="0,95,0,-95">
+            <TextBlock Text="Sticky Signup" FontSize="36" Margin="4" TextAlignment="Center"/>
+            <TextBlock x:Name="ErrorMessage" Text="" FontSize="20" Margin="4" Foreground="Red" TextAlignment="Center"/>
+            <TextBlock Text="Enter your username below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBox x:Name="UsernameTextBox" Margin="4" Width="250"/>
+            <TextBlock Text="Enter your password below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <PasswordBox x:Name="PasswordTextBox" Margin="4" Width="250"/>
+            <TextBlock Text="Enter your email address below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBox x:Name="EmailTextBox" Margin="4" Width="250"/>
+            <Button x:Name="SignUpButton" Content="Signup" Background="DodgerBlue" Foreground="White"
+         Click="SignUpButton_Click" Width="80" HorizontalAlignment="Center" Margin="0,20"/>
+            <TextBlock Text="Already have an account?"
+                TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="RegisterButtonTextBlock" Text="Login now"
+               PointerPressed="RegisterButtonTextBlock_PointerPressed"
+               Foreground="DodgerBlue"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            
+        </StackPanel>
 
-
-
-
-            <!--Submit Button-->
-
-            <!--Submit Button-->
-
-        
     </Grid>
 </Page>

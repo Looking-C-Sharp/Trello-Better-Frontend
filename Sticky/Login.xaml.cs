@@ -30,6 +30,7 @@ namespace Sticky
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            /*
             ErrorMessage.Text = "";
             if(UsernameTextBox.Text == "")
             {
@@ -44,6 +45,7 @@ namespace Sticky
             {
 
             }
+            */
 
         }
       

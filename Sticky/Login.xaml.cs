@@ -41,31 +41,27 @@ namespace Sticky
                 ErrorMessage.Text = "Please input a valid password";
             }
             //TODO: Connect to DB
+
             if(UsernameTextBox.Text == "ashley" && PasswordTextBox.Password == "ashley") //dummy values for 
             {
                 ErrorMessage.Text = "aaayyyyeee you did it";
             }
             else { ErrorMessage.Text = "try again"; }
+
             
 
         }
       
         private void RegisterButtonTextBlock_OnPointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            ErrorMessage.Text = "";
+            Frame.Navigate(typeof(Signup));
         }
 
-       // protected override async void OnNavigatedTo(NavigationEventArgs e)
-       // {
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+       {
             // Check Microsoft Passport is setup and available on this machine
-            //if (await LoginHelper.MicrosoftPassportAvailableCheckAsync())
-            //{
-            //}
-            //else
-            //{
-            //    // Microsoft Passport is not setup so inform the user
-            //    LoginButton.IsEnabled = false;
-            //}
-       // }
+            
+        }
     }
 }
+

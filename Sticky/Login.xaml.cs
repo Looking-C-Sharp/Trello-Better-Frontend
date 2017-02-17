@@ -30,7 +30,7 @@ namespace Sticky
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            /*
+            
             ErrorMessage.Text = "";
             if(UsernameTextBox.Text == "")
             {
@@ -41,30 +41,20 @@ namespace Sticky
                 ErrorMessage.Text = "Please input a valid password";
             }
             //TODO: Connect to DB
-            if(UsernameTextBox.Text == "ashley" && PasswordTextBox.Password == "ashley") //dummy values for 
-            {
-
-            }
-            */
+            
 
         }
       
         private void RegisterButtonTextBlock_OnPointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            ErrorMessage.Text = "";
+            Frame.Navigate(typeof(Signup));
         }
 
-       // protected override async void OnNavigatedTo(NavigationEventArgs e)
-       // {
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+       {
             // Check Microsoft Passport is setup and available on this machine
-            //if (await LoginHelper.MicrosoftPassportAvailableCheckAsync())
-            //{
-            //}
-            //else
-            //{
-            //    // Microsoft Passport is not setup so inform the user
-            //    LoginButton.IsEnabled = false;
-            //}
-       // }
+            
+        }
     }
 }
+

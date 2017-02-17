@@ -30,7 +30,8 @@ namespace Sticky
         }
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Signup));
+           //Frame.Navigate(typeof(Signup));
+            Frame.Navigate(typeof(Login));
         }
         
 

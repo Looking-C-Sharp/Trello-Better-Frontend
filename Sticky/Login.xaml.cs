@@ -30,7 +30,7 @@ namespace Sticky
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            /*
+            
             ErrorMessage.Text = "";
             if(UsernameTextBox.Text == "")
             {
@@ -43,9 +43,10 @@ namespace Sticky
             //TODO: Connect to DB
             if(UsernameTextBox.Text == "ashley" && PasswordTextBox.Password == "ashley") //dummy values for 
             {
-
+                ErrorMessage.Text = "aaayyyyeee you did it";
             }
-            */
+            else { ErrorMessage.Text = "try again"; }
+            
 
         }
       

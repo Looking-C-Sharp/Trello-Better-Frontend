@@ -28,25 +28,38 @@ namespace Sticky
             this.InitializeComponent();
         }
 
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             
             ErrorMessage.Text = "";
-            if(UsernameTextBox.Text == "")
+
+            if (UsernameTextBox.Text == "")
             {
-                ErrorMessage.Text = "Please input a valid username";
+               // ErrorMessage.Text = "Please input a valid username";
+                var dialog = new Windows.UI.Popups.MessageDialog("Please enter a valid username");
+                dialog.DefaultCommandIndex = 1;
+                await dialog.ShowAsync();
             }
             else if(PasswordTextBox.Password == "")
             {
-                ErrorMessage.Text = "Please input a valid password";
+                //ErrorMessage.Text = "Please input a valid password";
+                var dialog = new Windows.UI.Popups.MessageDialog("Please enter a valid password");
+                dialog.DefaultCommandIndex = 1;
+                await dialog.ShowAsync();
             }
             //TODO: Connect to DB
 
-            if(UsernameTextBox.Text == "ashley" && PasswordTextBox.Password == "ashley") //dummy values for 
+            if(UsernameTextBox.Text == "ashley" && PasswordTextBox.Password == "ashley") //dummy values standing in for database
             {
                 ErrorMessage.Text = "aaayyyyeee you did it";
             }
-            else { ErrorMessage.Text = "try again"; }
+            else
+            {
+                // ErrorMessage.Text = "try again";
+                var dialog = new Windows.UI.Popups.MessageDialog("Your email and password do not match. Please try again");
+                dialog.DefaultCommandIndex = 1;
+                await dialog.ShowAsync();
+            }
 
             
 

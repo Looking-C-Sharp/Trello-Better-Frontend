@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Sticky.Utils;
+using Sticky.Hub;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -52,6 +53,7 @@ namespace Sticky
             if(UsernameTextBox.Text == "ashley" && PasswordTextBox.Password == "ashley") //dummy values standing in for database
             {
                 ErrorMessage.Text = "aaayyyyeee you did it";
+                this.Frame.Navigate(typeof(HubPage));
             }
             else
             {

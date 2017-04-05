@@ -1,0 +1,46 @@
+﻿    <Page
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sticky"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Hub Header="Sticky" SectionHeaderClick="Hub_SectionHeaderClick"> 
+
+        <HubSection MinWidth="600" Header="Latest">
+            <DataTemplate>
+                <Grid>
+                    <TextBlock Text="The most recent news will be here." 
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                </Grid>
+            </DataTemplate>
+        </HubSection>
+
+        <HubSection x:Name="Teams" Header="Teams" IsHeaderInteractive="True"  
+        Background="#F4F4F4" MinWidth="250">
+            <DataTemplate>
+                <StackPanel>
+                    <TextBlock Text="Teams go here."
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                    <TextBlock Text="Click the header to go to the Team page."
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                </StackPanel>
+            </DataTemplate>
+        </HubSection>
+
+        <HubSection x:Name="Projects" Header="Projects" IsHeaderInteractive="True" 
+        Background="#F9F9F9" MinWidth="250">
+            <DataTemplate>
+                <StackPanel>
+                    <TextBlock Text="Projects goe here."
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                    <TextBlock Text="Click the header to go to the Projects page." 
+                   Style="{ThemeResource BodyTextBlockStyle}"/>
+                </StackPanel>
+            </DataTemplate>
+        </HubSection>
+    </Hub>
+
+</Page>

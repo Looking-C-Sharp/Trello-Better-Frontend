@@ -18,7 +18,7 @@ namespace Sticky.Controllers
             throw new NotImplementedException();
         }
 
-        public static bool SignUp(string username, string password, string email)
+        public static bool SignUp(string username, string full_name, string password, string email)
         {
             throw new NotImplementedException();
         }
